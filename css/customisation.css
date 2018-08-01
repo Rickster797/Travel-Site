@@ -1,6 +1,12 @@
 
 /* ----- Main Page Styling -----*/
 
+body {
+  background-color: snow;
+}
+
+/*Jumbotron styles*/
+
 .header {
   background-image: url(../images/everest.jpg);
   height: 70vh;
@@ -19,6 +25,17 @@ body {
 }
 
 /* ----- Nav Bar-----*/
+
+#navbarSupportedContent a {
+	color: grey;
+	margin-left: 74px;
+  font-size: 1.2em;
+}
+
+.navbar-brand {
+  color: grey;
+  font-size: 1.5em;
+}
 
 .bg-light {
   background-color: snow!important;
@@ -55,6 +72,10 @@ margin-left: 90px;
 
 .footer {
   display: inline-flex;
+
+ /*footer styles*/
+.mast-foot {
+  display: flex;
 }
 
 .social-icon {
@@ -75,8 +96,9 @@ margin-left: 90px;
 
 .copyp {
   width: 20%;
-  margin: 0 auto 0 auto;
-}
+  margin: 0 auto 0 auto
+    
+
 
 .inner {
   padding: 80px;
