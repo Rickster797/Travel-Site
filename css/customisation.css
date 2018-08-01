@@ -23,6 +23,11 @@
   display: inline-flex;
 }
 
+.social-icon {
+  margin-left: 100px;
+  /*margin-top: 80px;*/
+}
+
 .footer-year {
   color: gray;
 }
@@ -30,6 +35,17 @@
 .footer-logo {
   height: 6vh;
   width: 10vw;
+  margin-left: 60px;
+  /*margin-top: 75px;*/
+}
+
+.copyp {
+  width: 20%;
+  margin: 0 auto 0 auto;
+}
+
+.inner {
+  padding: 80px;
 }
 
 body {
