@@ -1,3 +1,6 @@
+
+/* ----- Main Page Styling -----*/
+
 .header {
   background-image: url(../images/everest.jpg);
   height: 70vh;
@@ -6,10 +9,32 @@
   box-sizing: border-box;
 }
 
+body {
+	background-color: snow;
+}
+
 .container {
   margin-right: 5vw;
   margin-left: 5vw;
 }
+
+/* ----- Nav Bar-----*/
+
+.bg-light {
+  background-color: snow!important;
+}
+
+.navcolors {
+font-family: 'Hanalei Fill', cursive;
+}
+
+#navbarSupportedContent a {
+float: right!important;
+color: red;
+margin-left: 90px;
+}
+
+/* ----- Card Styling -----*/
 
 .card {
   margin-right: 30px;
@@ -18,6 +43,15 @@
 .card-txt {
   text-align: center;
 }
+
+.card-img {
+  height: 200px;
+  width: 250px;
+}
+
+
+/* ----- Footer Styling -----*/
+
 
 .footer {
   display: inline-flex;
@@ -48,26 +82,6 @@
   padding: 80px;
 }
 
-body {
-	background-color: snow;
-}
 
-.bg-light {
-    background-color: snow!important;
-}
 
-.navcolors {
-font-family: 'Hanalei Fill', cursive;
-}
-
-#navbarSupportedContent a {
-	float: right!important;
-	color: red;
-	margin-left: 90px;
-}
-
-.card-img {
-  height: 200px;
-  width: 250px;
-}
 
