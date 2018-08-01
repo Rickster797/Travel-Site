@@ -15,6 +15,12 @@ body {
   box-sizing: border-box;
 }
 
+.header-about {
+  background-image: url(../images/hi-res-jump.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
 body {
 	background-color: snow;
 }
