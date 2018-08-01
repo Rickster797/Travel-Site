@@ -5,8 +5,8 @@
   font-family: 'Merienda', cursive;
 }
 
-.mast-foot {
-  display: flex;
+.footer {
+  display: inline-flex;
 }
 
 .footer-year {
