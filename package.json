@@ -1,0 +1,23 @@
+{
+  "name": "travel-site",
+  "version": "1.0.0",
+  "description": "Hello!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rickster797/Travel-Site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rickster797/Travel-Site/issues"
+  },
+  "homepage": "https://github.com/Rickster797/Travel-Site#readme",
+  "dependencies": {
+    "package.json": "^2.0.1"
+  }
+}
