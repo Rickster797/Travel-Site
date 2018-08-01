@@ -5,3 +5,15 @@
   font-family: 'Merienda', cursive;
 }
 
+.mast-foot {
+  display: flex;
+}
+
+.footer-year {
+  color: gray;
+}
+
+.footer-logo {
+  height: 6vh;
+  width: 10vw;
+}
