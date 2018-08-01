@@ -3,6 +3,7 @@
   height: 70vh;
   color: honeydew;
   font-family: 'Merienda', cursive;
+  box-sizing: border-box;
 }
 
 .mast-foot {
