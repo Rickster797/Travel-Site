@@ -19,11 +19,6 @@ body {
 	background-color: snow;
 }
 
-.container {
-  margin-right: 5vw;
-  margin-left: 5vw;
-}
-
 /* ----- Nav Bar-----*/
 
 #navbarSupportedContent a {
@@ -54,9 +49,13 @@ margin-left: 90px;
 /* ----- Card Styling -----*/
 
 .card {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin: 1.2rem;
 }
+
+.card-body {
+  padding: 0.7rem;
+}
+
 .card-txt {
   text-align: center;
 }
@@ -98,6 +97,7 @@ margin-left: 90px;
 .copyp {
   width: 20%;
   margin: 0 auto 0 auto
+}
     
 
 
