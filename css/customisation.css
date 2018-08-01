@@ -1,3 +1,8 @@
+body {
+  background-color: snow;
+}
+
+/*Jumbotron styles*/
 .header {
   background-image: url(../images/everest.jpg);
   height: 70vh;
@@ -6,6 +11,7 @@
   box-sizing: border-box;
 }
 
+/*footer styles*/
 .mast-foot {
   display: flex;
 }
@@ -19,8 +25,10 @@
   width: 10vw;
 }
 
-body {
-	background-color: snow;
+/*nav styles*/
+.navbar-brand {
+  color: grey;
+  font-size: 1.5em;
 }
 
 .bg-light {
@@ -32,7 +40,7 @@ font-family: 'Hanalei Fill', cursive;
 }
 
 #navbarSupportedContent a {
-	float: right!important;
-	color: red;
-	margin-left: 90px;
+	color: grey;
+	margin-left: 74px;
+  font-size: 1.2em;
 }
