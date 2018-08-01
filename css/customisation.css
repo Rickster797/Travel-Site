@@ -1,1 +1,19 @@
+/*navbar styling*/
 
+body {
+	background-color: snow;
+}
+
+.bg-light {
+    background-color: snow!important;
+}
+
+.navcolors {
+font-family: 'Hanalei Fill', cursive;
+}
+
+#navbarSupportedContent a {
+	float: right!important;
+	color: red;
+	margin-left: 90px;
+}
