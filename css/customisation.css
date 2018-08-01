@@ -47,7 +47,7 @@ font-family: 'Hanalei Fill', cursive;
 
 #navbarSupportedContent a {
 float: right!important;
-color: red;
+color: grey;
 margin-left: 90px;
 }
 
@@ -72,6 +72,7 @@ margin-left: 90px;
 
 .footer {
   display: inline-flex;
+  }
 
  /*footer styles*/
 .mast-foot {
