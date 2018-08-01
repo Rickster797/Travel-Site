@@ -18,6 +18,14 @@
   },
   "homepage": "https://github.com/Rickster797/Travel-Site#readme",
   "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sequence": "^1.0.0",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-watch": "^5.0.1",
     "package.json": "^2.0.1"
   }
 }
