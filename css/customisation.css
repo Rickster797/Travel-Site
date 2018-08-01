@@ -1,8 +1,12 @@
+
+/* ----- Main Page Styling -----*/
+
 body {
   background-color: snow;
 }
 
 /*Jumbotron styles*/
+
 .header {
   background-image: url(../images/everest.jpg);
   height: 70vh;
@@ -11,10 +15,43 @@ body {
   box-sizing: border-box;
 }
 
+body {
+	background-color: snow;
+}
+
 .container {
   margin-right: 5vw;
   margin-left: 5vw;
 }
+
+/* ----- Nav Bar-----*/
+
+#navbarSupportedContent a {
+	color: grey;
+	margin-left: 74px;
+  font-size: 1.2em;
+}
+
+.navbar-brand {
+  color: grey;
+  font-size: 1.5em;
+}
+
+.bg-light {
+  background-color: snow!important;
+}
+
+.navcolors {
+font-family: 'Hanalei Fill', cursive;
+}
+
+#navbarSupportedContent a {
+float: right!important;
+color: red;
+margin-left: 90px;
+}
+
+/* ----- Card Styling -----*/
 
 .card {
   margin-right: 30px;
@@ -24,12 +61,26 @@ body {
   text-align: center;
 }
 
+.card-img {
+  height: 200px;
+  width: 250px;
+}
+
+
+/* ----- Footer Styling -----*/
+
+
 .footer {
   display: inline-flex;
 
  /*footer styles*/
 .mast-foot {
   display: flex;
+}
+
+.social-icon {
+  margin-left: 100px;
+  /*margin-top: 80px;*/
 }
 
 .footer-year {
@@ -39,30 +90,20 @@ body {
 .footer-logo {
   height: 6vh;
   width: 10vw;
+  margin-left: 60px;
+  /*margin-top: 75px;*/
 }
 
-/*nav styles*/
-.navbar-brand {
-  color: grey;
-  font-size: 1.5em;
+.copyp {
+  width: 20%;
+  margin: 0 auto 0 auto
+    
+
+
+.inner {
+  padding: 80px;
 }
 
-.bg-light {
-    background-color: snow!important;
-}
 
-.navcolors {
-font-family: 'Hanalei Fill', cursive;
-}
 
-#navbarSupportedContent a {
-	color: grey;
-	margin-left: 74px;
-  font-size: 1.2em;
-}
-
-.card-img {
-  height: 200px;
-  width: 250px;
-}
 
