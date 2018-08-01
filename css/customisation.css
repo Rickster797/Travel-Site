@@ -1,4 +1,9 @@
-/*navbar styling*/
+.header {
+  background-image: url(../images/everest.jpg);
+  height: 50vh;
+  color: honeydew;
+  font-family: 'Merienda', cursive;
+}
 
 body {
 	background-color: snow;
