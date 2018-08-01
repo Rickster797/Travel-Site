@@ -11,7 +11,23 @@ body {
   box-sizing: border-box;
 }
 
-/*footer styles*/
+.container {
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+
+.card {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.card-txt {
+  text-align: center;
+}
+
+.footer {
+  display: inline-flex;
+
+ /*footer styles*/
 .mast-foot {
   display: flex;
 }
@@ -44,3 +60,9 @@ font-family: 'Hanalei Fill', cursive;
 	margin-left: 74px;
   font-size: 1.2em;
 }
+
+.card-img {
+  height: 200px;
+  width: 250px;
+}
+
