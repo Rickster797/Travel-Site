@@ -21,6 +21,13 @@ body {
   background-size: 100vw;
 }
 
+.header-contact {
+  background-image: url(../images/dumbo.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  box-sizing: border-box;
+}
+
 body {
 	background-color: snow;
 }
