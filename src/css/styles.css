@@ -1,0 +1,14 @@
+body {
+  background-color: snow; }
+
+.bg-light {
+  background-color: snow !important; }
+
+.card {
+  background-color: snow; }
+
+.navcolors {
+  font-family: Ubuntu, sans-serif; }
+
+.about.text {
+  font-family: Dosis, sans-serif; }
