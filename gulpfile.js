@@ -8,6 +8,8 @@ let concat = require('gulp-concat');
 let uglify = require('gulp-uglify-es').default;
 let htmlmin = require('gulp-htmlmin');
 let refresh = require('gulp-refresh');
+let less = require('gulp-less');
+let livereload = require('gulp-livereload');
 
 
 gulp.task('minify-html', function() {
@@ -52,10 +54,25 @@ gulp.task('scripts', function(callback){
 	gulpSequence('uglify')(callback)
 });
 
-gulp.task("watch", function () {
-	gulp.watch(['styles'], ['scripts']);
-});
+// gulp.task("watch", function () {
+// 	gulp.watch(['styles'], ['scripts']);
+// });
 
+let cssDir = "src/css/*.css";
+let htmlDir = "src/*.html"
+ 
+gulp.task('default', [], function() {
+	livereload.listen();
+	gulp.watch(cssDir, function() {
+		gulp.src(cssDir).pipe(livereload());
+	});
+	gulp.watch(htmlDir, function() {
+		gulp.src(htmlDir).pipe(livereload());
+	});
+
+
+
+});
 
 
 
