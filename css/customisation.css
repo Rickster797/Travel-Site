@@ -59,6 +59,11 @@ margin-left: 90px;
   border: none;
 }
 
+.card:hover {
+  background: lightgray;
+}
+
+
 .card-body {
   padding: 0.7rem;
 }
@@ -81,7 +86,7 @@ margin-left: 90px;
 }
 
  /*footer styles*/
-.mast-foot {
+.mastfoot {
   display: flex;
 }
 
