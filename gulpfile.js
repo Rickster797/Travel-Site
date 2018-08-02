@@ -18,16 +18,16 @@ gulp.task('minify-html', function() {
   });
 
 gulp.task('combine-css', function () {
-	return gulp.src('./css/*')
+	return gulp.src('./src/css/*')
 		.pipe(concat('styles.css'))
-		.pipe(gulp.dest('./css/'));
+		.pipe(gulp.dest('./docs/css/'));
 });
 
 gulp.task('minify-css', () => {
-  return gulp.src('css/styles.css')
+  return gulp.src('./docs/css/styles.css')
 	.pipe(cleanCSS({compatibility: 'ie8'}))
 	.pipe(rename({suffix: '.min'}))
-	.pipe(gulp.dest('./css/'));
+	.pipe(gulp.dest('./docs/css/'));
 });
 
 
@@ -45,7 +45,7 @@ gulp.task('uglify', function () {
 });
 
 gulp.task('styles', function(callback){
-	gulpSequence('combine-css', 'minify-css', 'minify-html')(callback)
+	gulpSequence('combine-css', 'minify-css')(callback)
 });
 
 gulp.task('scripts', function(callback){
