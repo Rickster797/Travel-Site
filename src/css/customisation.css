@@ -1,9 +1,4 @@
 
-/* ----- Main Page Styling -----*/
-
-body {
-  background-color: snow;
-}
 
 /*Jumbotron styles*/
 
@@ -35,10 +30,6 @@ body {
   box-sizing: border-box;
 }
 
-body {
-	background-color: snow;
-}
-
 /* ----- Nav Bar-----*/
 
 .navbar-brand {
@@ -46,13 +37,6 @@ body {
   font-size: 1.5em;
 }
 
-.bg-light {
-  background-color: snow!important;
-}
-
-.navcolors {
-  font-family: 'Ubuntu', sans-serif;
-}
 
 #navbarSupportedContent a {
 float: right!important;
@@ -65,7 +49,6 @@ font-size: 1.2em;
 
 .card {
   border: none;
-  background-color: snow;
 }
 
 .card:hover .card-body {

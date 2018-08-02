@@ -2,7 +2,6 @@
     text-align: center;
     padding: 10%;
     padding-top: 30px;
-    font-family: 'Dosis', sans-serif;
     font-size: 1.25em;
     line-height: 2em;
     color: #555f77;
@@ -70,11 +69,6 @@ label {
 
 }
 
-/* ----- Main Page Styling -----*/
-
-body {
-  background-color: snow;
-}
 
 /*Jumbotron styles*/
 
@@ -106,10 +100,6 @@ body {
   box-sizing: border-box;
 }
 
-body {
-	background-color: snow;
-}
-
 /* ----- Nav Bar-----*/
 
 .navbar-brand {
@@ -117,13 +107,6 @@ body {
   font-size: 1.5em;
 }
 
-.bg-light {
-  background-color: snow!important;
-}
-
-.navcolors {
-  font-family: 'Ubuntu', sans-serif;
-}
 
 #navbarSupportedContent a {
 float: right!important;
@@ -136,7 +119,6 @@ font-size: 1.2em;
 
 .card {
   border: none;
-  background-color: snow;
 }
 
 .card:hover .card-body {
@@ -4341,3 +4323,18 @@ font-size: 1.2em;
 }
 
 /*# sourceMappingURL=hover.css.map */
+
+body {
+  background-color: snow; }
+
+.bg-light {
+  background-color: snow !important; }
+
+.card {
+  background-color: snow; }
+
+.navcolors {
+  font-family: Ubuntu, sans-serif; }
+
+.about.text {
+  font-family: Dosis, sans-serif; }

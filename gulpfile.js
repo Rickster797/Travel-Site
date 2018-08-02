@@ -10,14 +10,17 @@ let htmlmin = require('gulp-htmlmin');
 let refresh = require('gulp-refresh');
 
 
-gulp.task('minify-html', function() {
-	return gulp.src('./src/*.html')
-	  .pipe(htmlmin({collapseWhitespace: true}))
-	  .pipe(gulp.dest('./docs/'));
-  });
+
+gulp.task('sass', function () {
+    var stream = gulp.src('./src/css/styles.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('./src/css/'))
+        .pipe(rename('styles.css'));
+    return stream;
+});
 
 gulp.task('combine-css', function () {
-	return gulp.src('./src/css/*')
+	return gulp.src('./src/css/*.css')
 		.pipe(concat('styles.css'))
 		.pipe(gulp.dest('./docs/css/'));
 });
@@ -29,6 +32,11 @@ gulp.task('minify-css', () => {
 	.pipe(gulp.dest('./docs/css/'));
 });
 
+gulp.task('minify-html', function() {
+	return gulp.src('./src/*.html')
+	  .pipe(htmlmin({collapseWhitespace: true}))
+	  .pipe(gulp.dest('./docs/'));
+  });
 
 // gulp.task('js-combine', function () {
 // 	return gulp.src()
@@ -44,7 +52,7 @@ gulp.task('uglify', function () {
 });
 
 gulp.task('styles', function(callback){
-	gulpSequence('combine-css', 'minify-css')(callback)
+	gulpSequence('combine-css', 'minify-css', 'sass')(callback)
 });
 
 gulp.task('scripts', function(callback){
