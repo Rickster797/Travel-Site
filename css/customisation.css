@@ -74,18 +74,13 @@ font-size: 1.2em;
 
 /* ----- Footer Styling -----*/
 
-
-.footer {
-  display: inline-flex;
-}
-
- /*footer styles*/
+ 
 .mastfoot {
   display: flex;
 }
 
 .social-icon {
-  margin-left: 100px;
+  padding: 20px;
   /*margin-top: 80px;*/
 }
 
@@ -96,7 +91,6 @@ font-size: 1.2em;
 .footer-logo {
   height: 6vh;
   width: 10vw;
-  margin-left: 60px;
   /*margin-top: 75px;*/
 }
 
@@ -105,10 +99,12 @@ font-size: 1.2em;
   margin: 0 auto 0 auto
 }
     
-
-
 .inner {
-  padding: 80px;
+  padding: 40px 80px 10px 80px;
+}
+
+.footer {
+  text-align: center;
 }
 
 
