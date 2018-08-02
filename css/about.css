@@ -1,0 +1,21 @@
+.about-text {
+    text-align: center;
+    padding: 10%;
+    padding-top: 30px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.25em;
+    line-height: 2em;
+    color: #555f77;
+
+}
+
+.about-text p:nth-of-type(odd) {
+    font-size: 1.5em;
+
+}
+
+.group-img {
+    text-align: center;
+}
+
+

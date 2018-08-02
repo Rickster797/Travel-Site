@@ -15,22 +15,31 @@ body {
   box-sizing: border-box;
 }
 
+.header-about {
+  background-image: url(../images/hi-res-jump.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+.header-contact {
+  background-image: url(../images/dumbo.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  box-sizing: border-box;
+}
+
+.header-gallery {
+  background-image: url(../images/freesolo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-sizing: border-box;
+}
+
 body {
 	background-color: snow;
 }
 
-.container {
-  margin-right: 5vw;
-  margin-left: 5vw;
-}
-
 /* ----- Nav Bar-----*/
-
-#navbarSupportedContent a {
-	color: grey;
-	margin-left: 74px;
-  font-size: 1.2em;
-}
 
 .navbar-brand {
   color: grey;
@@ -42,45 +51,43 @@ body {
 }
 
 .navcolors {
-font-family: 'Hanalei Fill', cursive;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #navbarSupportedContent a {
 float: right!important;
 color: grey;
 margin-left: 90px;
+font-size: 1.2em;
 }
 
 /* ----- Card Styling -----*/
 
 .card {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-.card-txt {
-  text-align: center;
+  border: none;
+  background-color: snow;
 }
 
-.card-img {
-  height: 200px;
-  width: 250px;
+.card:hover .card-body {
+  background: lightgray;
+  transition: all 0.2s ease-in-out;
 }
 
+.card:hover .btn {
+  background: crimson;
+  border: none;
+  color: white;
+}
 
 /* ----- Footer Styling -----*/
 
-
-.footer {
-  display: inline-flex;
-}
-
- /*footer styles*/
-.mast-foot {
+ 
+.mastfoot {
   display: flex;
 }
 
 .social-icon {
-  margin-left: 100px;
+  padding: 20px;
   /*margin-top: 80px;*/
 }
 
@@ -91,7 +98,6 @@ margin-left: 90px;
 .footer-logo {
   height: 6vh;
   width: 10vw;
-  margin-left: 60px;
   /*margin-top: 75px;*/
 }
 
@@ -101,7 +107,11 @@ margin-left: 90px;
 }
     
 .inner {
-  padding: 80px;
+  padding: 40px 80px 10px 80px;
+}
+
+.footer {
+  text-align: center;
 }
 
 

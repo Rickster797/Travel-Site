@@ -6,14 +6,19 @@ let gulpSequence = require('gulp-sequence');
 let watch = require('gulp-watch');
 let concat = require('gulp-concat');
 let uglify = require('gulp-uglify-es').default;
-let input_js_files = ['./js/jquery-3.2.1.slim.js','./js/popper.js', './js/bootstrap.js'];
+let htmlmin = require('gulp-htmlmin');
 
-gulp.task('sass', function () {
-    var stream = gulp.src('./scss/styles.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('./css/'))
-        .pipe(rename('styles.css'));
-    return stream;
+gulp.task('minify-html', function() {
+	return gulp.src('*.html')
+	  .pipe(htmlmin({collapseWhitespace: true}))
+	  .pipe(rename({suffix: '.min'}))
+	  .pipe(gulp.dest('./'));
+  });
+
+gulp.task('combine-css', function () {
+	return gulp.src('./css/*')
+		.pipe(concat('styles.css'))
+		.pipe(gulp.dest('./css/'));
 });
 
 gulp.task('minify-css', () => {
