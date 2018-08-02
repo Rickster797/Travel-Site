@@ -34,12 +34,6 @@ body {
 
 /* ----- Nav Bar-----*/
 
-#navbarSupportedContent a {
-	color: grey;
-	margin-left: 74px;
-  font-size: 1.2em;
-}
-
 .navbar-brand {
   color: grey;
   font-size: 1.5em;
@@ -57,6 +51,7 @@ font-family: 'Hanalei Fill', cursive;
 float: right!important;
 color: grey;
 margin-left: 90px;
+font-size: 1.2em;
 }
 
 /* ----- Card Styling -----*/
