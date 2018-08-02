@@ -55,28 +55,20 @@ margin-left: 90px;
 /* ----- Card Styling -----*/
 
 .card {
-  margin: 1.2rem;
   border: none;
+  background-color: snow;
 }
 
-.card:hover {
+.card:hover .card-body {
   background: lightgray;
+  transition: all 0.2s ease-in-out;
 }
 
-
-.card-body {
-  padding: 0.7rem;
+.card:hover .btn {
+  background: crimson;
+  border: none;
+  color: white;
 }
-
-.card-txt {
-  text-align: center;
-}
-
-.card-img {
-  height: 200px;
-  width: 250px;
-}
-
 
 /* ----- Footer Styling -----*/
 
