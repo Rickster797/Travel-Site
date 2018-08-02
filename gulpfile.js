@@ -11,10 +11,9 @@ let refresh = require('gulp-refresh');
 
 
 gulp.task('minify-html', function() {
-	return gulp.src('*.html')
+	return gulp.src('./src/*.html')
 	  .pipe(htmlmin({collapseWhitespace: true}))
-	  .pipe(rename({suffix: '.min'}))
-	  .pipe(gulp.dest('./'));
+	  .pipe(gulp.dest('./docs/'));
   });
 
 gulp.task('combine-css', function () {

@@ -79,7 +79,7 @@ body {
 /*Jumbotron styles*/
 
 .header {
-  background-image: url(../../src/images/everest.jpg);
+  background-image: url(../../images/everest.jpg);
   height: 70vh;
   color: honeydew;
   font-family: 'Merienda', cursive;
@@ -87,20 +87,20 @@ body {
 }
 
 .header-about {
-  background-image: url(../../src/images/hi-res-jump.jpg);
+  background-image: url(../../images/hi-res-jump.jpg);
   background-repeat: no-repeat;
   background-size: 100vw;
 }
 
 .header-contact {
-  background-image: url(../../src/images/dumbo.jpeg);
+  background-image: url(../../images/dumbo.jpeg);
   background-repeat: no-repeat;
   background-size: 100vw;
   box-sizing: border-box;
 }
 
 .header-gallery {
-  background-image: url(../../src/images/freesolo.jpg);
+  background-image: url(../../images/freesolo.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   box-sizing: border-box;
