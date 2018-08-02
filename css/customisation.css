@@ -28,6 +28,13 @@ body {
   box-sizing: border-box;
 }
 
+.header-gallery {
+  background-image: url(../images/freesolo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-sizing: border-box;
+}
+
 body {
 	background-color: snow;
 }
