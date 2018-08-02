@@ -1,0 +1,23 @@
+$main-background: snow;
+$ubuntu: Ubuntu, sans-serif;
+$dosis: Dosis, sans-serif;
+
+body {
+  background-color: $main-background;
+}
+
+.bg-light {
+  background-color: $main-background!important;
+}
+
+.card {
+  background-color: $main-background;
+}
+
+.navcolors {
+  font-family: $ubuntu;
+}
+
+.about.text {
+  font-family: $dosis
+}
