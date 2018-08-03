@@ -22,7 +22,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('combine-css', function () {
-	return gulp.src('./src/css/*.css')
+	return gulp.src(['node_modules/bootstrap/dist/css/bootstrap.min.css', './src/css/*.css'])
 		.pipe(concat('styles.css'))
 		.pipe(gulp.dest('./docs/css/'));
 });
