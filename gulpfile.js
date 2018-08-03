@@ -16,22 +16,22 @@ let livereload = require('gulp-livereload');
 gulp.task('sass', function () {
     var stream = gulp.src('./src/css/styles.scss')
         .pipe(sass())
-        .pipe(gulp.dest('./src/css/'))
+        .pipe(gulp.dest('src/css/'))
         .pipe(rename('styles.css'));
     return stream;
 });
 
 gulp.task('combine-css', function () {
-	return gulp.src(['node_modules/bootstrap/dist/css/bootstrap.min.css', './src/css/*.css'])
+	return gulp.src(['node_modules/bootstrap/dist/css/bootstrap.min.css', 'src/css/*.css'])
 		.pipe(concat('styles.css'))
-		.pipe(gulp.dest('./docs/css/'));
+		.pipe(gulp.dest('docs/css/'));
 });
 
 gulp.task('minify-css', () => {
-  return gulp.src('./docs/css/styles.css')
+  return gulp.src('docs/css/styles.css')
 	.pipe(cleanCSS({compatibility: 'ie8'}))
 	.pipe(rename({suffix: '.min'}))
-	.pipe(gulp.dest('./docs/css/'));
+	.pipe(gulp.dest('docs/css/'));
 });
 
 gulp.task('minify-html', function() {
