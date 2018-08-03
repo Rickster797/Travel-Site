@@ -47,24 +47,24 @@ gulp.task('minify-html', function() {
 // 	  .pipe(gulp.dest('./js/'));
 // });
 
-gulp.task('uglify', function () {
-	return gulp.src(['gulpfile.js'])
-	  .pipe(uglify())
-	  .pipe(rename({suffix: '.min'}))
-	  .pipe(gulp.dest('./'));
-});
+// gulp.task('uglify', function () {
+// 	return gulp.src(['gulpfile.js'])
+// 	  .pipe(uglify())
+// 	  .pipe(rename({suffix: '.min'}))
+// 	  .pipe(gulp.dest('./'));
+// });
 
 gulp.task('styles', function(callback){
-	gulpSequence('combine-css', 'minify-css', 'sass')(callback)
+	gulpSequence('combine-css', 'minify-css', 'sass', 'minify-html')(callback)
 });
 
-gulp.task('scripts', function(callback){
-	gulpSequence('uglify')(callback)
-});
-
-// gulp.task("watch", function () {
-// 	gulp.watch(['styles'], ['scripts']);
+// gulp.task('scripts', function(callback){
+// 	gulpSequence('uglify')(callback)
 // });
+
+gulp.task('watch', function () {
+	gulp.watch(['src/css/*.css', 'src/*.html'], ['styles']);
+});
 
 let cssDir = "src/css/*.css";
 let htmlDir = "src/*.html"
