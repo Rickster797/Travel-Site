@@ -37,6 +37,7 @@ gulp.task('minify-css', () => {
 gulp.task('minify-html', function() {
 	return gulp.src('./src/*.html')
 	  .pipe(htmlmin({collapseWhitespace: true}))
+	  .pipe(htmlmin({removeComments: true}))
 	  .pipe(gulp.dest('./docs/'));
   });
 
@@ -76,8 +77,6 @@ gulp.task('default', [], function() {
 	gulp.watch(htmlDir, function() {
 		gulp.src(htmlDir).pipe(livereload());
 	});
-
-
 
 });
 
