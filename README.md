@@ -4,10 +4,11 @@
 The repo can be found here: https://github.com/Rickster797/Travel-Site
 If working on repo, please branch off from Master into Development. We will be using a GitFlow workflow, so any work that is needing to be merged into Master needs to be requested via a Pull Request to the Release Team Lead. 
 
-#About
+# About
 Project is focussing on an Extreme Travel website, allowing custmers to book/contact regarding trips offered. 
 
-Tech used:
+
+# Tech
 Site uses SASS & CSS, with minimal JS currently. 
 Gulpfile has been used, with main tasks being:
 
